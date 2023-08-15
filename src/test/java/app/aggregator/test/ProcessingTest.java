@@ -37,10 +37,10 @@ public class ProcessingTest {
 
 		try {
 			while ((line = br.readLine()) != null) {
-				Instrument instrunet = DefinerInstrument.defineOf(line);
-				if (instrunet != null) {
-					if (INSTRUMENT.equals(instrunet.getName())) {
-						INSTRUMENTS.get(INSTRUMENT).add(instrunet);
+				Instrument instrument = DefinerInstrument.defineOf(line);
+				if (instrument != null) {
+					if (INSTRUMENT.equals(instrument.getName())) {
+						INSTRUMENTS.get(INSTRUMENT).add(instrument);
 
 					}
 				}
